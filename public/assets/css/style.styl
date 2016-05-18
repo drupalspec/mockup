@@ -1,0 +1,364 @@
+$headerHeight = 3.15rem
+$footerHeight = 0rem
+
+body
+  background #fff
+  overflow hidden
+
+.app
+    height 100%
+    width 100%
+    position relative
+    display table
+    bottom 0
+    margin 0
+    padding 0
+
+.app-header
+    display table-row
+    height $headerHeight
+    z-index 99
+    .app-bar
+        display table-cell
+        height $headerHeight
+        .app-bar-element
+            float none
+            text-align center
+
+.app-content
+    display table-row
+    height: 100%
+    .app-content--cell
+        display table-cell
+        height: 100%
+
+
+.app-sidebar
+    box-sizing border-box
+    width 30%
+    height  100%
+    float left
+    position relative
+
+.app-sidebar .cell-wrapper
+    padding 0.5rem .5rem 0.5rem
+
+.app-panel
+    box-sizing border-box
+    width 69%
+    margin-left 1%
+    height  100%
+    float left
+    position relative
+
+.single-col .app-panel
+    width 100%
+
+.app-panel .cell-wrapper
+    padding .5rem 1.3rem .5rem .7rem
+
+.cell-wrapper
+    position absolute
+    top 0
+    bottom 0
+    right 0
+    left 0
+    overflow auto
+
+.app-footer
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    height $footerHeight
+    padding 0.5rem 1rem 0
+    border-top 1px solid #000
+
+.calendar .calendar-header,
+.calendar .today a,
+.button.primary
+    background #2d74c7
+.button.primary
+    border-color #2d74c7
+
+
+
+fieldset
+    border none
+    margin 0
+    padding 0
+    margin-top: .5rem
+    header
+        margin-bottom 1rem
+        h3
+            margin 0
+            border-bottom: 1px solid #2d74c7
+            padding-bottom: 0.3rem
+            color #333
+        p
+            margin 0
+        h3 + p
+            margin-top .6rem
+    section
+        h4
+            margin 0 0 .3rem
+        p
+            margin 0
+        .grid
+            margin 0
+        .grid + grid
+            margin-top .6rem
+
+    section + section
+        margin-top 1.2rem
+
+fieldset + fieldset
+    margin-bottom .8rem
+
+.flex-start-menu
+    .row
+        align-items: stretch;
+        height 45vh
+    .cell
+        border 20px solid #fff
+        background #3B87C0
+        color #fff
+        text-align center
+        span
+            display inline-block
+            width 100%
+            font-size 30px
+            line-height 1
+            padding-top 17vh
+
+.wizard-navigation
+    padding 0 1rem
+    h1
+        margin-bottom 0
+        margin-top 13px
+        & + p
+            margin 0.2rem 0 2rem
+
+    h3
+        font-size 1.3rem
+        margin 1rem -.5rem
+        a
+            display block
+            padding .5rem
+    h3.passed
+        a,
+        h4 a
+            color #999
+    h3.active,
+    h4.active
+        a
+            background #2D74C7
+            color #fff
+    h4
+        margin-left 20px
+
+ul.sidebar-nav
+    margin 0
+    padding-top 4px
+    padding-left 0
+    li
+        margin 0
+        padding 10px 0 0
+        list-style none
+        font-size: 1.3rem
+        a
+            display block
+            padding: .5rem
+        ul
+            padding-top 5px
+            padding-left 10px
+            display none
+            li
+                padding 0
+                margin 0
+                a
+                    font-size 1rem
+                    padding .3rem 0 .3rem .5rem
+                    color #1D1D1D
+            li.active
+                a
+                    background #2D74C7
+                    color #fff
+        ul.expanded
+            display block
+
+    li.active > a
+        background #2D74C7
+        color #fff
+
+    li.active.expanded > a
+        background none
+        color #2086bf
+
+    li.active.expanded li.active > a
+        background #2D74C7
+        color #fff
+
+
+.input-control.checkbox
+    width 100%
+    display inline-table
+
+.input-control.radio
+    margin-left 42px
+
+.colspan4 h4,
+.titop
+    position relative
+    top 7px
+
+.colspan4 h4.ontop
+    top -2px
+
+.check.place-right
+    position relative
+    top 3px
+
+button.full-size
+    height 3.3rem
+
+.cells2 .cell h4
+    margin-bottom 4px
+
+.app-sidebar .cell-wrapper
+    background #f1f1f1
+
+.wizard-navigation ul li
+    line-height: 1.45rem
+
+.onbottom
+    position absolute
+    display block
+    width 95%
+    right 21px
+    bottom 3px
+
+.input-control.checkbox .check, .input-control.radio .check
+    width 1.935rem
+    height 1.935rem
+
+.input-control.radio .check:before
+    margin-top -0.371rem
+    margin-left -0.371rem
+    height .5824rem
+    width .5824rem
+
+.app-panel .cell-wrapper h4,
+.input-control.checkbox .caption, .input-control.radio .caption
+    font-size 1rem
+
+.grid.reason,
+.grid.reason2
+    padding-top 5px
+
+p.gray
+    color #999
+    font-weight 200
+
+hr
+    border 0
+    height 1px
+    background-color: #dedede
+    -webkit-margin-before: 1px
+    -webkit-margin-after: 1px
+
+.input-control.checkbox + hr
+    -webkit-margin-before: 4px
+
+.input-control.checkbox .caption, .input-control.radio .caption
+    font-size 1rem
+    position relative
+    top 2px
+
+.ui-datepicker
+    position: relative !important;
+    top: -290px !important;
+    left: 0 !important;
+
+.notify,
+.notify2,
+.notify4
+    max-width 100%
+    margin 0
+    border 1px solid #f2c779
+    background #fff8c4
+    font-size 13px
+
+.notify2,
+.notify4
+    padding .625rem
+    display block
+    position relative
+
+.reason,
+.reason2,
+.notify,
+.notify2,
+.notify3,
+.notify4
+    display none
+
+.notify2
+    margin-bottom 10px
+
+.notify.on
+    display block !important
+
+section.even
+    label
+        padding-bottom 4px
+        background #f7f7f7
+    .check.place-right
+        top 1px
+    .caption
+        padding-left 5px
+
+
+.dark-blue .app-bar, .dark-blue ul.sidebar-nav li.active.expanded li.active > a, .dark-blue ul.sidebar-nav li.active.expanded > a, .dark-blue .calendar .calendar-header, .dark-blue .calendar .today a, .dark-blue .button.primary, .dark-blue ul.sidebar-nav li.active > a
+  background #3b5998 none repeat scroll 0 0
+
+.dark-blue ul.sidebar-nav li.active.expanded > a, .dark-blue ul.sidebar-nav li.active > a
+  color #fff
+
+.dark-blue
+  ul
+    &.sidebar-nav
+      li
+        a
+          color #3b5998
+  .button
+    &.primary
+      border-color #3b5998
+  fieldset
+    header
+      h3
+        border-bottom-color #3b5998
+        
+
+.unit
+    line-height: 36px
+
+
+.input-control.checkbox .caption, .input-control.radio .caption 
+    font-size: 1rem
+    position: relative
+    top: 1px
+    left: 5px
+
+.input-control.checkbox .caption, .input-control.radio .caption
+    margin: -3px
+    
+
+
+.input-control.radio 
+    margin-left: 36px
+    
+.grid.custom .row
+    margin: 0
+    
+

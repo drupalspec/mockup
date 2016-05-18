@@ -1,0 +1,53 @@
+h2 Check KITAS
+
+fieldset
+    header
+        h3 Change installation cables
+    section
+        h4 Change the vehicle installation for test cable hose KITAS in plug B - yellow
+        br
+        .grid
+            .row.cells6
+                .cell.colspan4
+                    h4 Is the KITAS seal correct?
+                .cell.colspan2
+                    label.input-control.radio
+                        input(type="radio", name="reason", checked)
+                        span.check
+                        span.caption  Yes
+                    label.input-control.radio
+                        input(type="radio", name="reason")
+                        span.check
+                        span.caption  No
+    section.reasonon
+        .grid
+            .row.cells12
+                .cell.colspan5
+                    h4.titop Serial number KITAS
+                .cell.colspan7
+                    .input-control.text.full-size
+                        input(type="text")
+    section.reason
+        .grid
+            .row.cells12
+                .cell.colspan5
+                    h4.titop Enter the reason
+                .cell.colspan7
+                    .input-control.text.full-size
+                        input(type="text")
+
+    //section
+        h4 Reason
+        .input-control.text.full-size
+            input(type="text")
+
+fieldset.onbottom
+    section
+        .grid
+            .row.cells3
+                .cell
+                    button.button.large-button.primary.full-size Prev
+                .cell
+                .cell
+                    button.button.large-button.primary.full-size Next
+

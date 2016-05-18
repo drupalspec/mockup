@@ -1,0 +1,14 @@
+head
+    title #{ title ? title + ' / ' : '' }#{siteTitle}
+    base(href="/")
+    meta(charset='UTF-8')
+    != partial("_favicons")
+    <!-- Google Fonts -->
+    // build:css css/main.css
+    link(rel="stylesheet", href="assets/css/metro-icons.css")
+    link(rel="stylesheet", href="assets/css/metro-responsive.css")
+    link(rel="stylesheet", href="assets/css/metro-schemes.css")
+    link(rel="stylesheet", href="assets/css/magnific-popup.css")
+    link(rel="stylesheet", href="assets/css/metro.css")
+    link(rel="stylesheet", href="assets/css/style.css")
+    // endbuild

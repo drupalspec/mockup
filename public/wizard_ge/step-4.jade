@@ -1,0 +1,63 @@
+h2 Sensor Check
+fieldset
+  .notify.on Important!: Interrupt with both methods the DTCO®’s powersupply (connector A)
+fieldset
+  section.even
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption  With the KITAS Direct
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption
+        | Or with Reference Cable Test  
+        small (Connect reference cable from sensor to VU)
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption  Pair VU and Sensor
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption  Remove Workshop Card
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption
+        | Create 2
+        sup nd
+        |  Technical Data Printout and check serial nos match
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption  Identify on rear of printout as ‘Printout No.2’
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 Sensor Serial no is same as on 1st technical Data printout
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='notify', checked='checked')
+            span.check
+            span.caption  Yes
+          label.input-control.radio
+            input(type='radio', name='notify')
+            span.check
+            span.caption  No
+  section.even
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption  Re-insert Workshop Card into VU
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+          button.button.large-button.primary.full-size Prev
+        .cell
+          
+        .cell
+          button.button.large-button.primary.full-size Next

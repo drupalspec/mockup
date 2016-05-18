@@ -1,0 +1,125 @@
+h2 Common Requirements
+
+fieldset
+  header
+    h3 Condition of Vehicle
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 Unladen and in normal operating condition
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='reason', checked='checked')
+            span.check
+            span.caption  Yes
+          label.input-control.radio
+            input(type='radio', name='reason')
+            span.check
+            span.caption  No
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 Tyre condition and tread depth
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='notify', checked='checked')
+            span.check
+            span.caption  OK
+          label.input-control.radio
+            input(type='radio', name='notify')
+            span.check
+            span.caption  Not OK
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 Tyre pressures
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='notify2', checked='checked')
+            span.check
+            span.caption  OK
+          label.input-control.radio
+            input(type='radio', name='notify2')
+            span.check
+            span.caption  Not OK
+  section
+    .grid
+      .row.cells12
+        .cell.colspan5
+        .cell.colspan6
+          .input-control.text.full-size
+            input(type='text')
+        .cell.colspan1.unit
+          small / bar
+fieldset
+  header
+    h3 Conforms to EU Legislation
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 In accordance with EU Reg 3821/85 (as amended)
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='reason1', checked='checked')
+            span.check
+            span.caption  Yes
+          label.input-control.radio
+            input(type='radio', name='reason1')
+            span.check
+            span.caption  No
+      .row.cells6
+        .cell.colspan4
+          h4
+            | Requires IMS (3
+            sup rd
+            |  generation)
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='reason2', checked='checked')
+            span.check
+            span.caption  Yes
+          label.input-control.radio
+            input(type='radio', name='reason2')
+            span.check
+            span.caption  No
+      .row.cells6
+        .cell.colspan4
+          h4 Requires KITAS 2+ sensor
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='reason3', checked='checked')
+            span.check
+            span.caption  Yes
+          label.input-control.radio
+            input(type='radio', name='reason3')
+            span.check
+            span.caption  No
+fieldset
+  header
+    h3 Seals
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 Seals carry EU Type Approval mark
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='reason4', checked='checked')
+            span.check
+            span.caption  Yes
+          label.input-control.radio
+            input(type='radio', name='reason4')
+            span.check
+            span.caption  No
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+        .cell
+        .cell
+          button.button.large-button.primary.full-size Next

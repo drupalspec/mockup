@@ -1,0 +1,113 @@
+h2 Check KITAS
+
+
+fieldset
+    section
+        .grid
+            .row.cells6
+                .cell.colspan4
+                    h4 There is any magnet close to the sensor?
+                .cell.colspan2
+                    label.input-control.radio
+                        input(type="radio", name="notify")
+                        span.check
+                        span.caption  Yes
+                    label.input-control.radio
+                        input(type="radio", name="notify", checked)
+                        span.check
+                        span.caption  No
+        .notify Remove the magnet and continue
+    section
+        .grid
+            .row.cells2
+                .cell
+                    button.button.large-button.primary.full-size CALIBRATION > ... > ACTIVATION
+                .cell
+                    button.button.large-button.primary.full-size INFO TCO > ERROR MEMORY
+    section
+        label.input-control.checkbox
+            input(type="checkbox", name="checkbox2")
+            span.check.place-right
+            span.caption  Withdraw Card in Slot 2
+        label.input-control.checkbox
+            input(type="checkbox", name="checkbox2")
+            span.check.place-right
+            span.caption  Print Tecnhical Printout (4)
+    br
+    hr
+    br
+    section
+        .grid
+            .row.cells12
+                .cell.colspan5
+                    h4.titop S/N gearbox seal
+                .cell.colspan7
+                    .input-control.text.full-size
+                                input(type="text")
+    section
+        .grid
+            .row.cells6
+                .cell.colspan4
+                    h4.ontop Is the KITAS serial number the same in the 1st and 4th printout?
+                .cell.colspan2
+                    label.input-control.radio
+                        input(type="radio", name="notify3", checked)
+                        span.check
+                        span.caption  Yes
+                    label.input-control.radio
+                        input(type="radio", name="notify3")
+                        span.check
+                        span.caption  No
+        //- Показывать если No как нотифай
+        .notify2 Restore the vehicle installation and insert the workshop card in slot 1 and check if It's working right
+        .grid.notify3
+            .row.cells6
+                .cell.colspan4
+                    h4.ontop Is the KITAS serial number the same in the 1st and 4th printout?
+                .cell.colspan2
+                    label.input-control.radio
+                        input(type="radio", name="redio22", checked)
+                        span.check
+                        span.caption  Yes
+                    label.input-control.radio
+                        input(type="radio", name="redio22")
+                        span.check
+                        span.caption  No
+        //- p Repair the vehicle installation and insert the workshop card in slot 1 and check if It ́s working right. If Not change de DTCO and start again.
+        hr
+        br
+        .grid
+            .row.cells6
+                .cell.colspan4
+                    h4 Is the sensor affected by electric currents
+                .cell.colspan2
+                    label.input-control.radio
+                        input(type="radio", name="notify4")
+                        span.check
+                        span.caption  Yes
+                    label.input-control.radio
+                        input(type="radio", name="notify4" checked)
+                        span.check
+                        span.caption  No
+        .notify4 Change cable or KITAS and repeat process.
+
+    section
+        .grid
+            .row.cells2
+                .cell
+                    h4.titop First Instalation sensor date
+                .cell
+                    .input-control.text.full-size(data-role='datepicker')
+                          input(type='text')
+                          button.button
+                            span.mif-calendar
+fieldset.onbottom
+    section
+        .grid
+            .row.cells3
+                .cell
+                    button.button.large-button.primary.full-size Prev
+                .cell
+                .cell
+                    button.button.large-button.primary.full-size Next
+

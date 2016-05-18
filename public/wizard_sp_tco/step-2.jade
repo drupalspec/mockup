@@ -1,0 +1,88 @@
+h2 Seals and tyres
+fieldset
+  header
+    //- h3 Visual seal inspection
+  section
+    .grid.custom
+      .row.cells6
+        .cell.colspan4
+          h4 Has the installation all the seals and all were right?
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='reason', checked='checked')
+            span.check
+            span.caption  Yes
+          label.input-control.radio
+            input(type='radio', name='reason')
+            span.check
+            span.caption  No
+    .grid.reason
+      .row.cells12
+        .cell.colspan5
+          h4.titop Enter the reason
+        .cell.colspan7
+          .input-control.text.full-size
+            input(type='text')
+  section.even
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox1')
+      span.check.place-right
+      span.caption  Front
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox1')
+      span.check.place-right
+      span.caption  Battery
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption  Template
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox3')
+      span.check.place-right
+      span.caption  KITAS
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox4')
+      span.check.place-right
+      span.caption  DTCO 2.2
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox1')
+      span.check.place-right
+      span.caption  Odometer
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption  Potenciometer
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox3')
+      span.check.place-right
+      span.caption  Back cover
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox4')
+      span.check.place-right
+      span.caption  Interior access
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox5')
+      span.check.place-right
+      span.caption  Encoder cover
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox5')
+      span.check.place-right
+      span.caption  Installation template
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox5')
+      span.check.place-right
+      span.caption  Programming access
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox5')
+      span.check.place-right
+      span.caption  Gearbox
+    
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+          button.button.large-button.primary.full-size Prev
+        .cell
+        .cell
+          button.button.large-button.primary.full-size Next

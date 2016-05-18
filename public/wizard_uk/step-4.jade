@@ -1,0 +1,81 @@
+h2 Perform System Integrity Check and Visual Inspection of KITAS Sensor
+
+fieldset
+  section
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption  Check sensor for any signs of manipulation
+br
+fieldset
+  header
+    h3 Perform System Integrity Check (If applicable)
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 Reference Cable Test
+          small (Connect reference cable from sensor to VU)
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='radio2', checked='checked')
+            span.check
+            span.caption  Yes
+          label.input-control.radio
+            input(type='radio', name='radio2')
+            span.check
+            span.caption  No
+  section
+    button.button.large-button.primary.full-size Pair VU and Sensor
+  section
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption  Remove Workshop Card
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 Create 2nd Technical Data Printout and check serial nos match
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='radio3', checked='checked')
+            span.check
+            span.caption  Yes
+          label.input-control.radio
+            input(type='radio', name='radio3')
+            span.check
+            span.caption  No
+  section
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption  Identify on rear of printout as ‘Printout No.2’
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 Sensor Serial no is same as on 1st technical Data printout
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='radio4', checked='checked')
+            span.check
+            span.caption  Yes
+          label.input-control.radio
+            input(type='radio', name='radio4')
+            span.check
+            span.caption  No
+  section
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption  Re-insert Workshop Card into VU
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+          button.button.large-button.primary.full-size Prev
+        .cell
+        .cell
+          button.button.large-button.primary.full-size Next

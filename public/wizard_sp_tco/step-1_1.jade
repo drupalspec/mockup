@@ -1,0 +1,58 @@
+h2 Printout & Visual Inspection
+
+fieldset
+  header
+    h3 Collect tachograph datas
+  section
+    .grid
+      .row.cells12
+        .cell.colspan5
+          h4.titop TCO Manufacturer
+        .cell.colspan7
+          .input-control.text.full-size
+            input(type='text')
+  section
+    .grid
+      .row.cells12
+        .cell.colspan5
+          h4.titop TCO model
+        .cell.colspan7
+          .input-control.text.full-size
+            input(type='text')
+      .row.cells12
+        .cell.colspan5
+          h4.titop TCO homologation
+        .cell.colspan7
+          .input-control.text.full-size
+            input(type='text')
+  section
+    .grid
+      .row.cells12
+        .cell.colspan5
+          h4.titop TCO serial number
+        .cell.colspan7
+          .input-control.text.full-size
+            input(type='text')
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4.ontop According the 1st vehicle's matriculation date. Must have a digital tachograph?
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='reason2')
+            span.check
+            span.caption  Yes
+          label.input-control.radio
+            input(type='radio', name='reason2', checked='checked')
+            span.check
+            span.caption  No
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+          button.button.large-button.primary.full-size Prev
+        .cell
+        .cell
+          button.button.large-button.primary.full-size Next

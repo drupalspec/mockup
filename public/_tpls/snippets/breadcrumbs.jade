@@ -1,0 +1,7 @@
+div.breadcrumbs
+  a(href='index.html') Главная
+  if parent
+    span.delimiter ›
+    a(href='#{parent.link}.html')= parent.title
+  span.delimiter ›
+  | #{title}

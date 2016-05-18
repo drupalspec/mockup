@@ -1,0 +1,90 @@
+h2 Printout & Visual Inspection
+
+
+fieldset
+    header
+        h3 Visual Inspection – Installation template
+
+
+    section
+        .grid
+            .row.cells6
+                .cell.colspan4
+                    h4 Is the vechicle having the installation templated installed?
+                .cell.colspan2
+                    label.input-control.radio
+                        input(type="radio", name="reason", checked)
+                        span.check
+                        span.caption  Yes
+                    label.input-control.radio
+                        input(type="radio", name="reason")
+                        span.check
+                        span.caption  No
+        .grid.reason
+            .row.cells12
+                .cell.colspan5
+                    h4.titop Enter the reason
+                .cell.colspan7
+                    .input-control.text.full-size
+                        input(type="text")
+    section
+            .grid
+                .row.cells12
+                    .cell.colspan5
+                        h4.titop Workshop-ID
+                    .cell.colspan7
+                        .input-control.text.full-size
+                            input(type="text")
+                 .row.cells12
+                    .cell.colspan5
+                        h4.titop Date Template
+                    .cell.colspan7
+                        .input-control.text.full-size(data-role='datepicker')
+                              input(type='text')
+                              button.button
+                                span.mif-calendar
+                .row.cells12
+                    .cell.colspan5
+                        h4.titop Serial Number DTCO in template
+                    .cell.colspan7
+                        .input-control.text.full-size
+                            input(type="text")
+    section
+        .grid
+            .row.cells6
+                .cell.colspan4
+                    h4.ontop Is DTCCO serial number equal to the one on the installation template?
+                .cell.colspan2
+                    label.input-control.radio
+                        input(type="radio", name="reason2", checked)
+                        span.check
+                        span.caption  Yes
+                    label.input-control.radio
+                        input(type="radio", name="reason2")
+                        span.check
+                        span.caption  No
+        .grid.reason2
+            .row.cells12
+                .cell.colspan5
+                    h4.titop Enter the reason
+                .cell.colspan7
+                    .input-control.text.full-size
+                        input(type="text")
+
+fieldset.onbottom
+    section
+        .grid
+            .row.cells3
+                .cell
+                    button.button.large-button.primary.full-size Prev
+                .cell
+                .cell
+                    button.button.large-button.primary.full-size Next
+
+
+
+
+
+
+
+

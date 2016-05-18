@@ -1,0 +1,19 @@
+doctype
+//if IE 8
+    <html class="lt-ie9">
+// [if gt IE 8] <!
+html(lang="en")
+    // <![endif]
+    != partial("_tpls/_html-header")
+    body
+        .app.single-col
+            .app-header
+                != partial("_tpls/_header")
+            .app-content
+                .app-content--cell
+                    != yield
+            //.app-footer
+                != partial("_tpls/_footer")
+
+        script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js")
+        script(src="//cdn.rawgit.com/olton/Metro-UI-CSS/master/build/js/metro.min.js")

@@ -1,0 +1,54 @@
+.wizard-navigation
+    h1 Wizard Spain
+
+    //- for post, slug in public.wizard._data
+    //-     if post.sublink
+    //-         h4(class=current.source==slug? 'active' : '')
+    //-             a(href="/wizard_spain/#{ slug }.html")= post.title
+    //-     else
+    //-         h3(class=current.source==slug? 'active' : '')
+    //-             a(href="/wizard_spain/#{ slug }.html")= post.title
+
+    ul.sidebar-nav
+        li(class="#{ current.source == 'step-1' ? 'active' : '' }")
+            a(href='/wizard_spain/step-1.html') Printout & Visual Inspection
+            ul
+                li(class="#{ current.source == 'step-1' ? 'active' : '' }")
+                    a(href='/wizard_spain/step-1.html') Print tickets
+                li(class="#{ current.source == 'step-1_1' ? 'active' : '' }")
+                    a(href='/wizard_spain/step-1_1.html') Collect vehicle datas
+                li(class="#{ current.source == 'step-1_2' ? 'active' : '' }")
+                    a(href='/wizard_spain/step-1_2.html') Installation template
+                li(class="#{ current.source == 'step-1_3' ? 'active' : '' }")
+                    a(href='/wizard_spain/step-1_3.html') Seales
+        li(class="#{ current.source == 'step-2' ? 'active' : '' }")
+            a(href='/wizard_spain/step-2.html') Seals and Tyres
+            ul
+                li(class="#{ current.source == 'step-2' ? 'active' : '' }")
+                    a(href='/wizard_spain/step-2.html') Visual seal inspection
+                li(class="#{ current.source == 'step-2_1' ? 'active' : '' }")
+                    a(href='/wizard_spain/step-2_1.html') Visual tyre inspection
+                li(class="#{ current.source == 'step-2_2' ? 'active' : '' }")
+                    a(href='/wizard_spain/step-2_2.html') Visual check DTCO
+        li(class="#{ current.source == 'step-3' ? 'active' : '' }")
+            a(href='/wizard_spain/step-3.html') Card reader / Manipulation check
+            ul
+                li(class="#{ current.source == 'step-3' ? 'active' : '' }")
+                    a(href='/wizard_spain/step-3.html') Visual inspection – Card slot 2
+                li(class="#{ current.source == 'step-3_1' ? 'active' : '' }")
+                    a(href='/wizard_spain/step-3_1.html') Read massmemory DTCO
+        li(class="#{ current.source == 'step-4' ? 'active' : '' }")
+            a(href='/wizard_spain/step-4.html') Check KITAS
+            ul
+                li(class="#{ current.source == 'step-4' ? 'active' : '' }")
+                    a(href='/wizard_spain/step-4.html') Change installation cables
+                li(class="#{ current.source == 'step-4_1' ? 'active' : '' }")
+                    a(href='/wizard_spain/step-4_1.html') Check KITAS
+        li(class="#{ current.source == 'step-5' ? 'active' : '' }")
+          a(href='/wizard_spain/step-5.html') Device Testing
+        li(class="#{ current.source == 'step-6' ? 'active' : '' }")
+          a(href='/wizard_spain/step-6.html') Parametrization
+        li(class="#{ current.source == 'step-7' ? 'active' : '' }")
+          a(href='/wizard_spain/step-7.html') Error Checks
+        li(class="#{ current.source == 'step-8' ? 'active' : '' }")
+          a(href='/wizard_spain/step-8.html') Last Steps

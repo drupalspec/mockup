@@ -1,0 +1,70 @@
+{
+    "index": {
+        "title": "Printout & Visual Inspection",
+        "layout": "./_wizard.jade"
+    },
+    "step-1": {
+        "title": "Printout & Visual Inspection",
+        "layout": "./_wizard.jade"
+    },
+    "step-1_1": {
+        "title": "Collect vehicle datas",
+        "layout": "./_wizard.jade"
+    },
+    "step-1_2": {
+        "title": "Installation template",
+        "layout": "./_wizard.jade"
+    },
+    "step-1_3": {
+        "title": "Seales",
+        "layout": "./_wizard.jade"
+    }, 
+    "step-1_4": {
+        "title": "Collect TCO datas",
+        "layout": "./_wizard.jade"
+    },
+    "step-2": {
+        "title": "Seals and Tyres",
+        "layout": "./_wizard.jade"
+    },
+    "step-2_1": {
+        "title": "Visual seal inspection",
+        "layout": "./_wizard.jade"
+    },
+    "step-2_2": {
+        "title": "Visual tyre inspection",
+        "layout": "./_wizard.jade"
+    },
+    "step-3": {
+        "title": "Card reader / Manipulation check",
+        "layout": "./_wizard.jade"
+    },
+    "step-3_1": {
+        "title": "Card reader / Manipulation check",
+        "layout": "./_wizard.jade"
+    },
+    "step-3_2": {
+        "title": "Card reader / Manipulation check",
+        "layout": "./_wizard.jade"
+    },
+    "step-4": {
+        "title": "Check KITAS",
+        "layout": "./_wizard.jade"
+    },
+    "step-4_1": {
+        "title": "Check KITAS",
+        "layout": "./_wizard.jade"
+    },
+    "step-5": {
+        "title": "Device Testing",
+        "layout": "./_wizard.jade"
+    },
+    "step-6": {
+        "title": "Parametrization",
+        "layout": "./_wizard.jade"
+    },
+    "step-7": {
+        "title": "Error Checks",
+        "layout": "./_wizard.jade"
+    }
+}

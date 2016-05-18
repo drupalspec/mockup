@@ -1,0 +1,99 @@
+h2 Common Test Steps
+fieldset
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 Are the tyres on the drive axle permitted for this vehicle?
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='reason', checked='checked')
+            span.check
+            span.caption  Yes
+          label.input-control.radio
+            input(type='radio', name='reason')
+            span.check
+            span.caption  No
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4.ontop
+            | Does the tread depth of tyres on the drive shaft comply with the legal requirements?
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='notify', checked='checked')
+            span.check
+            span.caption  OK
+          label.input-control.radio
+            input(type='radio', name='notify')
+            span.check
+            span.caption  Not OK
+  section
+    .grid
+      .row.cells12
+        .cell.colspan4
+          h4.titop Tread depth
+        .cell.colspan7
+          .input-control.text.full-size
+            input(type='text')
+        .cell.colspan1.unit
+          small / mm
+br
+fieldset
+
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4.ontop
+            | Are no tieres with different dimensions mounted on the drive shaft?
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='notify16', checked='checked')
+            span.check
+            span.caption  OK
+          label.input-control.radio
+            input(type='radio', name='notify16')
+            span.check
+            span.caption  Not OK
+      .row.cells12
+        .cell.colspan4
+          h4.titop Tyre size
+        .cell.colspan7
+          .input-control.text.full-size
+            input(type='text')
+        .cell.colspan1
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4.ontop
+            | Is the tire pressure on all wheels of the driving axle in accordance with the manufacturer’s instructions?
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='notify1', checked='checked')
+            span.check
+            span.caption  OK
+          label.input-control.radio
+            input(type='radio', name='notify1')
+            span.check
+            span.caption  Not OK
+  section
+    .grid
+      .row.cells12
+        .cell.colspan4
+          h4.titop Tire pressure
+        .cell.colspan7
+          .input-control.text.full-size
+            input(type='text')
+        .cell.colspan1.unit
+          small / bar
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+        .cell
+        .cell
+          button.button.large-button.primary.full-size Next

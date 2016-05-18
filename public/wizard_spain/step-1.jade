@@ -1,0 +1,96 @@
+h2 Printout & Visual Inspection
+
+fieldset
+    header
+        h3 Print tickets
+    section
+        label.input-control.checkbox
+            input(type="checkbox", name="checkbox1")
+            span.check.place-right
+            span.caption  Reject Cars from the DTCO
+        hr
+        label.input-control.checkbox
+            input(type="checkbox", name="checkbox2")
+            span.check.place-right
+            span.caption  Print Technical Printout (1) from the DTCO
+    section
+        .grid
+            .row.cells6
+                .cell.colspan4
+                    h4 Is the unit installed according the UE 1266/2009?
+                .cell.colspan2
+                    label.input-control.radio
+                        input(type="radio", name="reason", checked)
+                        span.check
+                        span.caption  Yes
+                    label.input-control.radio
+                        input(type="radio", name="reason")
+                        span.check
+                        span.caption  No
+        .grid.reason
+            .row.cells12
+                .cell.colspan5
+                    h4.titop Enter the reason
+                .cell.colspan7
+                    .input-control.text.full-size
+                        input(type="text")
+
+    section
+        .grid
+            .row.cells6
+                .cell.colspan4
+                    h4 Is the vehicle unloaded and in good conditions?
+                .cell.colspan2
+                    label.input-control.radio
+                        input(type="radio", name="notify", checked)
+                        span.check
+                        span.caption  Yes
+                    label.input-control.radio
+                        input(type="radio", name="notify")
+                        span.check
+                        span.caption  No
+        .notify Advice the driver about this issue and repeat the process when the vehicle unloaded and in good conditions
+
+    section
+        .grid
+            .row.cells12
+                .cell.colspan5
+                    h4.titop Sensor homologation
+                .cell.colspan7
+                    .input-control.text.full-size
+                        input(type="text")
+            .row.cells12
+                .cell.colspan5
+                     h4.titop First instalation sensor date
+                .cell.colspan7
+                    .input-control.text.full-size(data-role='datepicker')
+                        input(type='text')
+                        button.button
+                                span.mif-calendar
+    section
+        label.input-control.checkbox
+            input(type="checkbox", name="checkbox3")
+            span.check.place-right
+            span.caption  Print Events & Faults printout (2)
+        hr
+        label.input-control.checkbox
+            input(type="checkbox", name="checkbox4")
+            span.check.place-right
+            span.caption  Print Overspeed events (3)
+
+fieldset.onbottom
+    section
+        .grid
+            .row.cells3
+                .cell
+                .cell
+                .cell
+                    button.button.large-button.primary.full-size Next
+
+
+
+
+
+
+
+

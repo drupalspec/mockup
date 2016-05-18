@@ -1,0 +1,41 @@
+h2 Card reader / Manipulation check
+
+fieldset
+    header
+        h3 Visual inspection – Card slot 2
+    section
+        .grid
+            .row.cells6
+                .cell.colspan4
+                    h4 Insert workshop card in slot 2. Is slot 2 OK?
+                .cell.colspan2
+                    label.input-control.radio
+                        input(type="radio", name="reason", checked)
+                        span.check
+                        span.caption  Yes
+                    label.input-control.radio
+                        input(type="radio", name="reason")
+                        span.check
+                        span.caption  No
+    section.reasonon
+        label.input-control.checkbox
+            input(type="checkbox", name="checkbox2")
+            span.check.place-right
+            span.caption  Clean card slot 1
+    section.reason
+        button.button.large-button.primary.full-size Parametrization TCO > Change Device
+    section.reason
+        label.input-control.checkbox
+            input(type="checkbox", name="checkbox2")
+            span.check.place-right
+            span.caption  Change DTCO and start again
+
+fieldset.onbottom
+    section
+        .grid
+            .row.cells3
+                .cell
+                    button.button.large-button.primary.full-size Prev
+                .cell
+                .cell
+                    button.button.large-button.primary.full-size Next

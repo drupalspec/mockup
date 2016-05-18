@@ -1,0 +1,53 @@
+h2 Perform System Integrity Check and Visual Inspection of KITAS Sensor
+
+fieldset
+  header
+    h3 Perform System Integrity Check (If applicable)
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 KITAS Direct Cable
+          small (Connect cable to sensor)
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='radio2', checked='checked')
+            span.check
+            span.caption  Yes
+          label.input-control.radio
+            input(type='radio', name='radio2')
+            span.check
+            span.caption  No
+  section
+    button.button.large-button.primary.full-size Read sensor serial No
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 Check serial nos match with Tech Printout
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='radio22', checked='checked')
+            span.check
+            span.caption  Yes
+          label.input-control.radio
+            input(type='radio', name='radio22')
+            span.check
+            span.caption  No
+  section
+    button.button.large-button.primary.full-size Pair VU and Sensor
+  section
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      h4.ontop
+        | Mark on Reverse of 1st Technical data printout "Sensor Serial no, checked using VDO WorkshopTab"
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+          button.button.large-button.primary.full-size Prev
+        .cell
+        .cell
+          button.button.large-button.primary.full-size Next

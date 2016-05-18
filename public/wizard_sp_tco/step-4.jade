@@ -1,0 +1,50 @@
+h2 Check KITAS
+fieldset
+  header
+    h3 Sensor movement
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 There is any magnet close to the sensor?
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='notify')
+            span.check
+            span.caption  Yes
+          label.input-control.radio
+            input(type='radio', name='notify', checked='checked')
+            span.check
+            span.caption  No
+    .notify Remove the magnet and continue
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 Is the sensor affected by electric currents
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='notify4')
+            span.check
+            span.caption  Yes
+          label.input-control.radio
+            input(type='radio', name='notify4', checked='checked')
+            span.check
+            span.caption  No
+  section.notify4
+    .grid
+      .row.cells12
+        .cell.colspan5
+          h4.titop S/N sensor
+        .cell.colspan7
+          .input-control.text.full-size
+            input(type='text')
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+          button.button.large-button.primary.full-size Prev
+        .cell
+        .cell
+          button.button.large-button.primary.full-size Next

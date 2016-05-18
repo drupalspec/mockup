@@ -1,0 +1,98 @@
+h2 Device Approval and Functionality Checks
+fieldset
+  header
+    h3 Check the Tacho manufacturer’s data plate
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 Equipment manufacturer
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='radio1', checked='checked')
+            span.check
+            span.caption  OK
+          label.input-control.radio
+            input(type='radio', name='radio1')
+            span.check
+            span.caption  Not OK
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 Part no and year of manufacture
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='radio2', checked='checked')
+            span.check
+            span.caption  OK
+          label.input-control.radio
+            input(type='radio', name='radio2')
+            span.check
+            span.caption  Not OK
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 Serial no
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='radio3', checked='checked')
+            span.check
+            span.caption  OK
+          label.input-control.radio
+            input(type='radio', name='radio3')
+            span.check
+            span.caption  Not OK
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 Approval mark
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='radio4', checked='checked')
+            span.check
+            span.caption  OK
+          label.input-control.radio
+            input(type='radio', name='radio4')
+            span.check
+            span.caption  Not OK
+  br
+  br
+  section.even
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox1')
+      span.check.place-right
+      span.caption  Check the display and Operation of the VU
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption
+        | Replace Buffer Battery 
+        small (if applicable) 
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox3')
+      span.check.place-right
+      span.caption  Replace customer Printer Roll
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox4')
+      span.check.place-right
+      span.caption
+        | Check IMS is Switched ON  
+        small (if applicable)
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox5')
+      span.check.place-right
+      span.caption
+        | Check KITAS 2+ Sensor installed 
+        small (if applicable)
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+          button.button.large-button.primary.full-size Prev
+        .cell
+        .cell
+          button.button.large-button.primary.full-size Next

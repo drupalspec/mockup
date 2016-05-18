@@ -1,0 +1,73 @@
+h2 Device Approval and Functionality Checks
+
+fieldset
+  header
+    h3
+      | Check ADR DTCO and IS circuitry 
+      span (if applicable)
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 Fitted with ADR Barrier Unit / Fuse
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='radio1', checked='checked')
+            span.check
+            span.caption  Yes
+          label.input-control.radio
+            input(type='radio', name='radio1')
+            span.check
+            span.caption  No
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 Has Intrinsically Safe circuitry
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='radio2', checked='checked')
+            span.check
+            span.caption  Yes
+          label.input-control.radio
+            input(type='radio', name='radio2')
+            span.check
+            span.caption  No
+  br
+  br
+  section.even
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox1')
+      span.check.place-right
+      span.caption  Insert Workshop Card into VU and enter PIN
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox2')
+      span.check.place-right
+      span.caption  Create 1st technical data printout
+    label.input-control.checkbox
+      input(type='checkbox', name='checkbox3')
+      span.check.place-right
+      span.caption  Identify on rear of printout as ‘Printout No.1’
+  section
+    .grid
+      .row.cells6
+        .cell.colspan4
+          h4 VU Serial no on printout same as data plate
+        .cell.colspan2
+          label.input-control.radio
+            input(type='radio', name='radio3', checked='checked')
+            span.check
+            span.caption  Yes
+          label.input-control.radio
+            input(type='radio', name='radio3')
+            span.check
+            span.caption  No
+fieldset.onbottom
+  section
+    .grid
+      .row.cells3
+        .cell
+          button.button.large-button.primary.full-size Prev
+        .cell
+        .cell
+          button.button.large-button.primary.full-size Next

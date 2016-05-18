@@ -1,0 +1,52 @@
+h2 Device Testing
+
+fieldset
+    section
+        button.button.large-button.primary.full-size Parametrization TCO > Parameters TCO > Legal Parameters
+    section
+        label.input-control.checkbox
+            input(type="checkbox", name="checkbox2")
+            span.check.place-right
+            span.caption  Set odometer value
+    section
+        button.button.large-button.primary.full-size TCO Info > Error memory  > Delete errors
+    section
+        label.input-control.checkbox
+            input(type="checkbox", name="checkbox2")
+            span.check.place-right
+            span.caption  With the vehicle stopped and without contact, check tolerances.
+    section
+        button.button.large-button.primary.full-size Calibration > Trial Run> Variable Speed checking
+    section
+        button.button.large-button.primary.full-size Calibration > Trial Run> Odometer ckecking
+    section
+        label.input-control.checkbox
+            input(type="checkbox", name="checkbox2")
+            span.check.place-right
+            span.caption  Variable speed testing at 20,80 and 125 km/h, moving 1000m in each speed
+br
+fieldset
+    section
+        .grid
+            .row.cells6
+                .cell.colspan4
+                    h4.ontop Is the tolerance below ±2% for the real distance and ±1%for the real Speed?
+                .cell.colspan2
+                    label.input-control.radio
+                        input(type="radio", name="radio1")
+                        span.check
+                        span.caption  Yes
+                    label.input-control.radio
+                        input(type="radio", name="radio1", checked)
+                        span.check
+                        span.caption  No
+
+fieldset.onbottom
+    section
+        .grid
+            .row.cells3
+                .cell
+                    button.button.large-button.primary.full-size Prev
+                .cell
+                .cell
+                    button.button.large-button.primary.full-size Next
